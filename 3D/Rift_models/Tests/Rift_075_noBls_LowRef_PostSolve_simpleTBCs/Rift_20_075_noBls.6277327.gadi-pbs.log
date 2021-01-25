@@ -1,0 +1,158 @@
+No module named 'lavavu' : module not found! disabling inline visualisation
+loaded rc file /scratch/q97/codes/UWGeodynamics_2.9.6/lib/python3.7/site-packages/UWGeodynamics/uwgeo-data/uwgeodynamicsrc
+	Global element size: 256x128x64
+	Local offset of rank 0: 0x0x0
+	Local range of rank 0: 16x22x16
+In func WeightsCalculator_CalculateAll(): for swarm "EUPUEN8X__swarm"
+	done 33% (1878 cells)...
+	done 67% (3755 cells)...
+	done 100% (5632 cells)...
+WeightsCalculator_CalculateAll(): finished update of weights for swarm "EUPUEN8X__swarm"
+In SystemLinearEquations_NonLinearExecute
+
+Non linear solver - iteration 0
+Linear solver (JCSD8ZU7__system-execute) 
+Linear solver (JCSD8ZU7__system-execute), solution time 1.955251e-01 (secs)
+Non linear solver - iteration 1
+Linear solver (JCSD8ZU7__system-execute) 
+Linear solver (JCSD8ZU7__system-execute), solution time 1.497707e-01 (secs)
+In func SystemLinearEquations_NonLinearExecute: Iteration 1 of 500 - Residual 0.0058778 - Tolerance = 0.01
+Non linear solver - Residual 5.87776929e-03; Tolerance 1.0000e-02 - Converged - 7.099383e-01 (secs)
+
+In func SystemLinearEquations_NonLinearExecute: Converged after 1 iterations.
+Running with UWGeodynamics version 2.9.6
+Options:  -Q22_pc_type uw -ksp_type bsscr -pc_type none -ksp_k2_type NULL -rescale_equations False -remove_constant_pressure_null_space False -change_backsolve False -change_A11rhspresolve False -restore_K False -A11_ksp_type fgmres -A11_ksp_rtol 1e-06 -scr_ksp_type fgmres -scr_ksp_rtol 1e-05
+In SystemLinearEquations_NonLinearExecute
+
+Non linear solver - iteration 0
+Linear solver (XZLKK65K__system-execute) 
+
+BSSCR -- Block Stokes Schur Compliment Reduction Solver 
+AUGMENTED LAGRANGIAN K2 METHOD - Penalty = 0.000000
+
+SROpGenerator_SimpleFinestLevel: time = 2.40004e-02 
+  [5] SROpGenerator_SimpleCoarserLevel: time = 8.73347e-03 
+  [4] SROpGenerator_SimpleCoarserLevel: time = 5.64226e-03 
+  [3] SROpGenerator_SimpleCoarserLevel: time = 5.53667e-03 
+  [2] SROpGenerator_SimpleCoarserLevel: time = 4.99615e-03 
+  [1] SROpGenerator_SimpleCoarserLevel: time = 5.31973e-03 
+  Setting schur_pc to "uw" 
+
+
+SCR Solver Summary:
+
+  Multigrid setup:        = 0.05496 secs 
+  RHS V Solve:            = 0.6503 secs / 14 its
+  Pressure Solve:         = 12.55 secs / 29 its
+  Final V Solve:          = 0.3487 secs / 11 its
+
+  Total BSSCR Linear solve time: 13.925007 seconds
+
+Linear solver (XZLKK65K__system-execute), solution time 1.393309e+01 (secs)
+Non linear solver - iteration 1
+Linear solver (XZLKK65K__system-execute) 
+
+BSSCR -- Block Stokes Schur Compliment Reduction Solver 
+AUGMENTED LAGRANGIAN K2 METHOD - Penalty = 0.000000
+
+SROpGenerator_SimpleFinestLevel: time = 1.84824e-02 
+  [5] SROpGenerator_SimpleCoarserLevel: time = 7.08386e-03 
+  [4] SROpGenerator_SimpleCoarserLevel: time = 5.20571e-03 
+  [3] SROpGenerator_SimpleCoarserLevel: time = 4.13133e-03 
+  [2] SROpGenerator_SimpleCoarserLevel: time = 5.13743e-03 
+  [1] SROpGenerator_SimpleCoarserLevel: time = 4.35391e-03 
+  Setting schur_pc to "uw" 
+
+
+SCR Solver Summary:
+
+  Multigrid setup:        = 0.04516 secs 
+  RHS V Solve:            = 0.7441 secs / 19 its
+  Pressure Solve:         = 21.54 secs / 46 its
+  Final V Solve:          = 0.4057 secs / 13 its
+
+  Total BSSCR Linear solve time: 22.920053 seconds
+
+Linear solver (XZLKK65K__system-execute), solution time 2.292656e+01 (secs)
+In func SystemLinearEquations_NonLinearExecute: Iteration 1 of 500 - Residual 0.59556 - Tolerance = 0.01
+Non linear solver - Residual 5.95562304e-01; Tolerance 1.0000e-02 - Not converged - 4.256416e+01 (secs)
+
+Non linear solver - iteration 2
+Linear solver (XZLKK65K__system-execute) 
+
+BSSCR -- Block Stokes Schur Compliment Reduction Solver 
+AUGMENTED LAGRANGIAN K2 METHOD - Penalty = 0.000000
+
+SROpGenerator_SimpleFinestLevel: time = 2.00974e-02 
+  [5] SROpGenerator_SimpleCoarserLevel: time = 7.00864e-03 
+  [4] SROpGenerator_SimpleCoarserLevel: time = 4.45576e-03 
+  [3] SROpGenerator_SimpleCoarserLevel: time = 4.91456e-03 
+  [2] SROpGenerator_SimpleCoarserLevel: time = 4.72268e-03 
+  [1] SROpGenerator_SimpleCoarserLevel: time = 4.27520e-03 
+  Setting schur_pc to "uw" 
+
+
+SCR Solver Summary:
+
+  Multigrid setup:        = 0.04627 secs 
+  RHS V Solve:            = 0.7773 secs / 20 its
+  Pressure Solve:         = 22.75 secs / 48 its
+  Final V Solve:          = 0.4049 secs / 13 its
+
+  Total BSSCR Linear solve time: 24.160625 seconds
+
+Linear solver (XZLKK65K__system-execute), solution time 2.416689e+01 (secs)
+In func SystemLinearEquations_NonLinearExecute: Iteration 2 of 500 - Residual 0.01277 - Tolerance = 0.01
+Non linear solver - Residual 1.27703916e-02; Tolerance 1.0000e-02 - Not converged - 6.979353e+01 (secs)
+
+Non linear solver - iteration 3
+Linear solver (XZLKK65K__system-execute) 
+
+BSSCR -- Block Stokes Schur Compliment Reduction Solver 
+AUGMENTED LAGRANGIAN K2 METHOD - Penalty = 0.000000
+
+SROpGenerator_SimpleFinestLevel: time = 1.75186e-02 
+  [5] SROpGenerator_SimpleCoarserLevel: time = 6.68343e-03 
+  [4] SROpGenerator_SimpleCoarserLevel: time = 4.98987e-03 
+  [3] SROpGenerator_SimpleCoarserLevel: time = 4.61786e-03 
+  [2] SROpGenerator_SimpleCoarserLevel: time = 4.38327e-03 
+  [1] SROpGenerator_SimpleCoarserLevel: time = 4.11367e-03 
+  Setting schur_pc to "uw" 
+
+
+SCR Solver Summary:
+
+  Multigrid setup:        = 0.04304 secs 
+  RHS V Solve:            = 0.7722 secs / 20 its
+  Pressure Solve:         = 24.71 secs / 51 its
+  Final V Solve:          = 0.4039 secs / 13 its
+
+  Total BSSCR Linear solve time: 26.105430 seconds
+
+Linear solver (XZLKK65K__system-execute), solution time 2.611166e+01 (secs)
+In func SystemLinearEquations_NonLinearExecute: Iteration 3 of 500 - Residual 0.0078225 - Tolerance = 0.01
+Non linear solver - Residual 7.82253374e-03; Tolerance 1.0000e-02 - Converged - 9.886320e+01 (secs)
+
+In func SystemLinearEquations_NonLinearExecute: Converged after 3 iterations.
+Linear solver (SL1ZEED3__system-execute) 
+Linear solver (SL1ZEED3__system-execute), solution time 5.290689e-01 (secs)
+Time Integration
+	2nd order:                 K152FTII__integrand -    0.6284 [min] /    0.7151 [max] (secs)
+Time Integration - 0.630291 [min] / 0.715193 [max] (secs)
+Time Integration
+	2nd order:                 HW1GA7BW__integrand -    0.0000 [min] /    0.0002 [max] (secs)
+Time Integration - 1.0478e-05 [min] / 0.0109481 [max] (secs)
+Time Integration
+	2nd order:                 M8BMRKRR__integrand -    0.0000 [min] /    0.0002 [max] (secs)
+Time Integration - 6.569e-06 [min] / 0.000390795 [max] (secs)
+In func WeightsCalculator_CalculateAll(): for swarm "EUPUEN8X__swarm"
+	done 33% (1878 cells)...
+	done 67% (3755 cells)...
+	done 100% (5632 cells)...
+WeightsCalculator_CalculateAll(): finished update of weights for swarm "EUPUEN8X__swarm"
+In func WeightsCalculator_CalculateAll(): for swarm "EUPUEN8X__swarm"
+	done 33% (1878 cells)...
+	done 67% (3755 cells)...
+	done 100% (5632 cells)...
+WeightsCalculator_CalculateAll(): finished update of weights for swarm "EUPUEN8X__swarm"
+Step:     1 Model Time: 50185.9 year dt: 50185.9 year (2020-06-03 01:39:39)
