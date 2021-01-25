@@ -1,0 +1,20 @@
+#PBS -P q97
+#PBS -q express
+#PBS -l walltime=12:00:00
+#PBS -l mem=1500GB
+#PBS -l jobfs=100GB
+#PBS -l ncpus=384
+#PBS -l software=underworld
+#PBS -l wd
+#PBS -lstorage=scratch/q97
+#PBS -N Rift_20_02_Bls
+
+source /scratch/q97/codes/UWGeodynamics_2.9.6.sh
+
+
+MODELNAME="Rift_20_02_Bls"
+OUTPUTPATH=`pwd`
+SCRIPT="Rift_20_02_Bls.py"
+
+# execution
+mpiexec python3 ./$SCRIPT 1> $OUTPUTPATH/$MODELNAME.$PBS_JOBID.log 2> $OUTPUTPATH/$MODELNAME.$PBS_JOBID.err
