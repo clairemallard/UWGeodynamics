@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --nodes=8
+#SBATCH --time=24:00:00
+#SBATCH --account=q97
+##SBATCH --image=docker:rbeucher/underworld2_geodynamics:magnus
+
+echo "PRINTING ENVIRONMENT"
+env
+
+echo "PRINTING SLURM SCRIPT"
+scontrol show job ${SLURM_JOBID} -ddd
+
+module load shifter/18.06.00
+
+MODELNAME="BE"
+OUTPUTPATH=`pwd`
+SCRIPT="3D_passive_margin.py"
+
+srun -n128 shifter run --mpi rbeucher/underworld2_geodynamics:magnus python $SCRIPT 
