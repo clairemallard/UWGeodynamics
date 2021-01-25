@@ -1,0 +1,8 @@
+mkdir newfolder 
+cp oldfolder/* newfolder
+git add newfolder 
+git commit -m 'start rename'     
+git push                             #New Folder appears on Github      
+git rm -r oldfolder
+git commit -m 'rename complete' 
+git push                             #Old Folder disappears on Github  
